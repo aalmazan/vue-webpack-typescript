@@ -7,7 +7,8 @@ const navbarComponent = () => import('./components/navbar').then(({ NavbarCompon
 // const navbarComponent = () => import(/* webpackChunkName: 'navbar' */'./components/navbar').then(({ NavbarComponent }) => NavbarComponent);
 
 import './sass/main.scss';
-{{#hotReload}}if (process.env.ENV === 'development' && module.hot) {
+{{#hotReload}}
+if (process.env.ENV === 'development' && module.hot) {
   const navbarModuleId = './components/navbar';
 
   // first arguments for `module.hot.accept` and `require` methods have to be static strings

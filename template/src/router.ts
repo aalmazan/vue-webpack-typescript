@@ -8,7 +8,8 @@ const listComponent = () => import('./components/list').then(({ ListComponent })
 // const homeComponent = () => import(/* webpackChunkName: 'home' */'./components/home').then(({ HomeComponent }) => HomeComponent);
 // const aboutComponent = () => import(/* webpackChunkName: 'about' */'./components/about').then(({ AboutComponent }) => AboutComponent);
 // const listComponent = () => import(/* webpackChunkName: 'list' */'./components/list').then(({ ListComponent }) => ListComponent);
-{{#hotReload}}if (process.env.ENV === 'development' && module.hot) {
+{{#hotReload}}
+if (process.env.ENV === 'development' && module.hot) {
   const homeModuleId = './components/home';
   const aboutModuleId = './components/about';
   const listModuleId = './components/list';
